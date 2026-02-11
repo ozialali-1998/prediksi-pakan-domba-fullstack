@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Data - Prediksi Pakan Domba</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Prediksi Pakan Domba</h1>
+    <nav>
+      <a href="/index.html">Beranda</a>
+      <a href="/input-data.html" class="active">Input Data</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Input Data Prediksi</h2>
+    <div id="messageBox" class="message" aria-live="polite"></div>
+
+    <form id="predictionForm" class="card form-grid">
+      <label>
+        Berat Badan Domba (kg)
+        <input type="number" name="berat" min="1" step="0.1" required />
+      </label>
+
+      <label>
+        Umur Domba (bulan)
+        <input type="number" name="umur" min="1" step="1" required />
+      </label>
+
+      <label>
+        Jumlah Domba (ekor)
+        <input type="number" name="jumlah" min="1" step="1" required />
+      </label>
+
+      <label>
+        Jenis Pakan
+        <select id="feedTypeSelect" name="feedTypeId" required></select>
+      </label>
+
+      <button type="submit" class="btn">Proses Prediksi</button>
+    </form>
+
+    <section id="customFeedSection" class="card hidden">
+      <h3>Tambah Jenis Pakan Baru</h3>
+      <form id="customFeedForm" class="form-grid">
+        <label>
+          Nama Pakan Baru
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Protein (%)
+          <input type="number" name="protein" min="0" step="0.1" required />
+        </label>
+
+        <label>
+          Energi (kcal)
+          <input type="number" name="energy" min="0" step="1" required />
+        </label>
+
+        <button type="submit" class="btn btn-secondary">Simpan Jenis Pakan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Prediksi Pakan Domba</p>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
