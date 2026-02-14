@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Prediksi - Prediksi Pakan Domba</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Prediksi Pakan Domba</h1>
+    <nav>
+      <a href="/index.html">Beranda</a>
+      <a href="/input-data.html" class="active">Input Data</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Form Input Prediksi</h2>
+    <div id="messageBox" class="message" aria-live="polite"></div>
+
+    <form id="predictionForm" class="card form-grid">
+      <label>
+        Bulan yang Akan Diprediksi
+        <input type="number" name="bulan" min="2" step="1" required />
+      </label>
+
+      <label>
+        Jumlah Domba
+        <input type="number" name="jumlahDomba" min="1" step="1" required />
+      </label>
+
+      <label>
+        Konsumsi Pakan (kg/hari)
+        <input type="number" name="konsumsiPakan" min="0.1" step="0.1" required />
+      </label>
+
+      <label>
+        Jenis Pakan
+        <select name="jenisPakan" id="feedTypeSelect" required>
+          <option value="">Pilih jenis pakan</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn">Proses Prediksi</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Prediksi Pakan Domba</p>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "prediksi-pakan-domba-fullstack",
+  "version": "1.0.0",
+  "description": "A full stack web app for sheep feed prediction using multiple linear regression.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sqlite",
+    "regression",
+    "sheep-feed"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
